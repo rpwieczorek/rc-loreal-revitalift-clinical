@@ -5,6 +5,7 @@ $red: #e03e2f;
 $black: #1d1d1b;
 $purple: #624589;
 $purpleBg: #e1dbf2;
+$orangeText: #f75800;
 
 html,
 body {
@@ -30,7 +31,7 @@ body {
 #es-loreal.es-loreal {
   font-family: $regular;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   max-width: 998px;
   margin: 0 auto;
@@ -51,6 +52,8 @@ body {
     color: $black;
   }
   .es-kv {
+    margin: 0;
+    padding: 0;
     position: relative;
     background-color: #ededee;
     &__logo {
@@ -95,6 +98,119 @@ body {
     &__img {
       @include img;
     }
+  }
+
+  .es-routine {
+    background-image: linear-gradient(0deg, #fff, #ef7938);
+    &__mobile {
+      display: block;
+    }
+    &__title {
+      @include text;
+      font-size: 28px;
+      padding: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+    }
+    &__subtitle {
+      @include text;
+      font-size: 28px;
+      padding: 0 20px 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      color: #fff;
+      & span {
+        color: #e42423;
+      }
+    }
+    &__img {
+      @include img;
+      padding: 20px;
+    }
+    &__step {
+      font-size: 20px;
+      &--wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+      }
+      &--title {
+        @include text;
+        text-transform: uppercase;
+        color: $orangeText;
+        font-weight: 700;
+      }
+      &--desc {
+        @include text;
+        text-transform: uppercase;
+      }
+      &--subtitle {
+        @include text;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+    &__ba {
+      background: linear-gradient(0deg, transparent 35%, $orangeText 35%,$orangeText 65%, transparent 65%,transparent 100%);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      &--single {
+        position: relative;
+      }
+      &--desc {
+        width: 100%;
+        @include text;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        bottom: 40px;
+        & sup {
+          font-size: 10px;
+        }
+      }
+      &--text {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        gap: 10px;
+      }
+      &--number {
+        @include text;
+        display: inline-block;
+        font-weight: 900;
+        font-size: 90px;
+        text-transform: uppercase
+      }
+      &--content {
+        @include text;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: inline-block;
+        & sup {
+          font-size: 10px;
+        }
+      }
+    }
+    &__title-bottom {
+      @include text;
+      font-size: 28px;
+      padding: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 400;
+      & span {
+        color: $orangeText;
+      }
+    }
+
   }
 
   .es-slider {
@@ -323,6 +439,11 @@ body {
         max-width: 280px;
       }
 
+    }
+    .es-routine {
+      &__mobile {
+        display: none;
+      }
     }
     .es-slider {
       &__title {

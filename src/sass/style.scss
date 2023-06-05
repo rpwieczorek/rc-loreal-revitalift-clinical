@@ -50,7 +50,52 @@ body {
     font-family: $regular;
     color: $black;
   }
-
+  .es-kv {
+    position: relative;
+    background-color: #ededee;
+    &__logo {
+      position: relative;
+      margin: 0 auto;
+      padding: 15px;
+      max-width: 50%;
+    }
+    &__logo-2 {
+      position: relative;
+      margin: 0 auto;
+      padding: 30px 15px 15px;
+      max-width: 80%;
+    }
+    &__title {
+      position: relative;
+      @include text;
+      padding: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 700;
+      & span {
+        background-image: linear-gradient(90deg, #ea6232, #feeb29);
+        background-clip: text;
+        color: transparent;
+      }
+    }
+    &__badge {
+      position: relative;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    &__photo {
+      &--desktop {
+        display: none;
+      }
+      &--mobile {
+        display: block;
+      }
+    }
+    &__img {
+      @include img;
+    }
+  }
 
   .es-slider {
     background: url('images/bg-slider.png') no-repeat;
@@ -242,7 +287,43 @@ body {
 
   }
   @media screen and (min-width: 768px) {
+    .es-kv {
+      &__photo {
+        &--desktop {
+          display: block;
+        }
+        &--mobile {
+          display: none;
+        }
+      }
+      &__logo {
+        position: absolute;
+        top: 3%;
+        right: 2%;
+        max-width: 220px;
+      }
+      &__logo-2 {
+        position: absolute;
+        top: 13%;
+        right: 2%;
+        max-width: 220px;
+      }
+      &__title {
+        position: absolute;
+        top: 29%;
+        right: 0;
+        width: 420px;
+        text-align: left;
+        font-size: 48px;
+      }
+      &__badge {
+        position: absolute;
+        top: 50%;
+        right: -8%;
+        max-width: 280px;
+      }
 
+    }
     .es-slider {
       &__title {
         font-size: 35px;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>L'Oréal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    >
+    <link rel="stylesheet" href="./css/style.css" >
+  </head>
+  <body>
+    <div class="es-loreal" id="es-loreal">
+      <section class="es-kv">
+        <div class="es-kv__logo">
+          <img src="images/logo.png" alt="" class="es-kv__img" >
+        </div>
+        <div class="es-kv__banner">
+          <div class="es-kv__photo--desktop">
+            <img src="images/kv-photo-desktop.png" alt="" class="es-kv__img" >
+          </div>
+          <div class="es-kv__photo--mobile">
+            <img src="images/kv-photo-mobile.png" alt="" class="es-kv__img" >
+          </div>
+          <div class="es-kv__title">
+            <h2 class="es-kv__title">Revitalift Filler water-cream</h2>
+
+          </div>
+          <div class="es-kv__badge">
+            <img
+              src="images/badge.png"
+              alt=""
+              class="es-kv__img"
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="es-slider">
+        <h3 class="es-slider__title">
+          DLACZEGO KWAS HIALURONOWY I&nbsp;CERAMIDY<br >
+          <strong>są TAK ISTOTNe W&nbsp;codziennej PIELĘGNACJI?</strong>
+        </h3>
+        <div class="es-slider__wrapper">
+          <div class="es-slider__content">
+            <div class="es-slider__persona">
+              <div class="es-slider__photo">
+                <img src="images/persona.png" alt="" class="es-slider__img" >
+              </div>
+              <div class="es-slider__photo">
+                <img src="images/podpis.png" alt="" class="es-slider__img" >
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="es-slider__slide">
+                    <div class="es-slider__number">1</div>
+                    <p class="es-slider__text">
+                      Kwas hialuronowy jest jednym z&nbsp;podstawowych składników aktywnych każdej pielęgnacji. Występuje on&nbsp;fizjologicznie w&nbsp;naszej skórze od&nbsp;urodzenia, ale&nbsp;niestety, już od&nbsp;25&nbsp;roku życia jego poziom spada. Główne działanie kwasu hialuronowego to&nbsp;ogromna zdolność wiązania wody
+w&nbsp;skórze właściwej. Przy systematycznym stosowaniu dba o&nbsp;prawidłowe nawilżenie skóry, przywraca jej&nbsp;blask i&nbsp;redukuje zmarszczki&nbsp;–<br >
+                      <strong
+                        >mówi dr Ivana Stanković,
+                        dermatolog, ekspert marki L’Oréal Paris</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="es-slider__slide">
+                    <div class="es-slider__number">2</div>
+                    <p class="es-slider__text">
+                      Ceramidy to&nbsp;kolejny składnik aktywny, naturalnie występujący w&nbsp;naszej skórze, którego poziom spada wraz z&nbsp;wiekiem. Ceramidy potocznie nazywane są&nbsp;cementem międzykomórkowym, ponieważ utworzony
+z&nbsp;nich mur chroni przed nadmierną utratą wody, wspomaga odpowiednie nawilżenie oraz wspiera funkcje bariery ochronnej skóry. Niedobór ceramidów, z&nbsp;kolei, sprawia, że&nbsp;skóra staje się sucha, cieńsza, mniej elastyczna, a&nbsp;także szybciej się&nbsp;starzeje.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <div class="es-slider__arrow">
+                <img
+                  src="images/arrow-left.png"
+                  alt=""
+                  class="es-slider__img"
+                >
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <div class="es-slider__arrow">
+                <img
+                  src="images/arrow-right.png"
+                  alt=""
+                  class="es-slider__img"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-footer">
+        <p class="es-footer__text">
+          <sup>*</sup>Wnioski i wyniki z badania zostały zweryfikowane przez zewnętrzny panel dermatologów sponsorowany przez L’Oréal.
+          <br >
+          <sup>**</sup>Ocena kliniczna, 85 kobiety, 2 tygodnie.<br >
+          <sup>***</sup>Test instrumentalny, 24 kobiety.
+        </p>
+      </div>
+    </div>
+    <script src="./js/slider.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoHeight: false,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      })
+    </script>
+  </body>
+</html>

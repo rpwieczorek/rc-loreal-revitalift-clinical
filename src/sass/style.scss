@@ -265,6 +265,47 @@ body {
     }
   }
 
+  .es-ingr {
+    &__wrapper {
+      margin: 0 auto;
+      padding: 20px;
+    }
+    &__title {
+      @include text;
+      font-size: 28px;
+      padding: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+    }
+    &__item {
+      @include text;
+      font-size: 18px;
+      padding: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+    }
+    &__headline {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__bracket {
+      height: 32px;
+    }
+    &__text {
+      @include text;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__img {
+      @include img;
+      padding: 20px;
+    }
+  }
+
   .es-slider {
     background: url('images/bg-slider.png') no-repeat;
     background-size: cover;

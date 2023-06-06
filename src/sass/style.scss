@@ -387,7 +387,7 @@ body {
 
   .es-slider {
     background-color: #fea245;
-    margin: 64px 0 64px;
+    margin: 64px 0 0;
     padding-bottom: 64px;
     &__title {
       @include text;
@@ -498,78 +498,39 @@ body {
     }
   }
 
-  .es-cross {
-    margin-bottom: 56px;
-    &__bg {
-      display: none
-    }
+  .es-use {      
+    background: url("../images/bg-use.png");
+    background-repeat: no-repeat;
+    background-position: top left;
     &__title {
       @include text;
-      font-size: 32px;
-      font-weight: 300;
-      margin-bottom: 32px;
-      padding: 0 16px;
-      text-transform: uppercase;
-      line-height: 1.1;
       text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      padding: 90px 16px 40px 40px;
     }
-    &__img {
-      @include img;
-    }
-    &__packshot {
-      margin-bottom: 16px;
-      &--desktop {
-        display: none;
-      }
-    }
-    &__container {
+    &__wrapper {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 32px 16px;
+      flex-wrap: wrap;
+      padding: 10px 20px 40px;
+      gap: 45px 20px;
     }
     &__single {
-      width: 258px;
-      max-width: 100%;
-      display: flex;
-      flex-flow: column;
-      justify-content: flex-end;
-      &:hover {
-        .es-cross__link {
-          background: #e1044b;
-        }
-      }
-    }
-    &__product {
-      @include text;
+      width: 230px;
       text-align: center;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 8px;
     }
-    &__name {
+    &__photo {
+      @include img;
+    }
+    &__desc {
       @include text;
-      text-align: center;
+      padding-top: 15px;
       font-size: 16px;
-      margin-bottom: 8px;
-    }
-    &__link {
-      @include text;
-      padding: 12px;
-      border-radius: 4px;
-      color: #fff;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 700;
-      background: $black;
-      text-decoration: none;
-      display: block;
-      transition: background 0.3s;
-    }
-    &__line {
-      display: none;
+      font-weight: 300;
     }
   }
+
 
   .es-footer {
     padding: 0 16px;

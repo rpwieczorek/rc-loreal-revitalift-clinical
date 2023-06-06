@@ -533,10 +533,10 @@ body {
 
 
   .es-footer {
-    padding: 0 16px;
-    padding-bottom: 56px;
+    background: #f1f3f2;
     &__text {
       @include text;
+      padding: 60px 15px 30px;
       text-align: center;
       font-size: 12px;
     }

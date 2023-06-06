@@ -531,6 +531,82 @@ body {
     }
   }
 
+  .es-cross {
+    &__title {
+      @include text;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      padding-bottom: 40px;
+      text-transform: uppercase;
+      & span {
+        color: $orangeText;
+      }
+    }
+    padding: 0 15px;
+    &__left {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    &__right {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      text-align: right;
+      
+      gap: 20px;
+      &:hover {
+        .es-cross__link {
+          background: black;
+        }
+      }
+    }
+    &__content {
+      max-width: 320px;
+      padding: 20px 15px;
+    }
+    &__arrow {
+      @include img;
+    }
+    &__subtitle {
+      @include text;
+      font-size: 15px;
+      font-weight: 500;
+      padding-bottom: 15px;
+      & span {
+        color: $orangeText;
+      }
+    }
+    &__text {
+      @include text;
+      font-size: 15px;
+    }
+    &__packshot {
+      width: 50%;
+    }
+    &__img {
+      @include img;
+    }
+    &__link {
+      max-width: 300px;
+      @include text;
+      padding: 10px;
+      border-radius: 1px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      background: $orangeText;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      transition: background 0.3s;
+    }
+  }
 
   .es-footer {
     background: #f1f3f2;

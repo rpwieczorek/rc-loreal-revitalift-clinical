@@ -319,8 +319,9 @@ body {
     &__wrapper {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       padding: 10px 20px 40px;
-      gap: 15px;
+      gap: 45px 15px;
     }
     &__single {
       width: 230px;
@@ -347,6 +348,40 @@ body {
       font-size: 14px;
       font-weight: 300;
       color: #fff;
+    }
+  }
+
+  .es-formula {
+    &__content {
+      margin: 0 auto;
+      padding: 10px;
+    }
+    &__title {
+      @include text;
+      font-size: 28px;
+      font-weight: 700;
+      padding: 30px 15px;
+      text-align: center
+    }
+    &__text {
+      @include text;
+      padding: 0 15px;
+      font-size: 18px;
+      text-align: center;
+    }
+    &__wrapper {
+      padding: 25px 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
+    &__item {
+      width: 120px;
+      text-align: center;
+    }
+    &__desc {
+      @include text;
+
     }
   }
 
@@ -538,18 +573,19 @@ body {
 
   @media screen and (min-width: 500px) {
     .es-results {
-      
       &__desc {
-        
         &--number {
           font-weight: 700;
           font-size: 120px;
         }
         &--content {
-
           font-size: 18px;
-
         }
+      }
+    }
+    .es-formula {
+      &__item {
+        width: 165px;
       }
     }
   }

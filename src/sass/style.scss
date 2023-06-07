@@ -617,7 +617,7 @@ body {
       }
     }
     &__content {
-      max-width: 320px;
+      max-width: 270px;
       padding: 20px 15px;
     }
     &__arrow {
@@ -625,16 +625,21 @@ body {
     }
     &__subtitle {
       @include text;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 500;
       padding-bottom: 15px;
       & span {
         color: $orangeText;
       }
     }
+    &__desc {
+      @include text;
+      padding: 10px 0;
+      font-size: 13px;
+    }
     &__text {
       @include text;
-      font-size: 15px;
+      font-size: 13px;
     }
     &__packshot {
       width: 50%;

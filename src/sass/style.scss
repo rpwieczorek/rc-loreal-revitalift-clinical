@@ -349,6 +349,13 @@ body {
     &__single {
       width: 230px;
       text-align: center;
+      transition: all 0.3s;
+      &:hover {
+        
+        .es-benefits__number {
+          transform: translateY(-20px);
+        }
+      }
     }
     &__number {
       @include text;
@@ -357,6 +364,7 @@ body {
       line-height: 0.5;
       opacity: 0.5;
       color: #fff;
+      transition: all 0.3s;
     }
     &__subtitle {
       @include text;
@@ -401,6 +409,16 @@ body {
     &__item {
       width: 120px;
       text-align: center;
+      transition: all 0.3s;
+      &:hover {
+        
+        .es-formula__icon {
+          transform: translateY(-20px);
+        }
+      }
+    }
+    &__icon {
+      transition: all 0.3s;
     }
     &__desc {
       @include text;
@@ -542,9 +560,16 @@ body {
     &__single {
       width: 230px;
       text-align: center;
+      &:hover {
+        
+        .es-use__photo {
+          transform: translateY(-20px);
+        }
+      }
     }
     &__photo {
       @include img;
+      transition: all 0.3s;
     }
     &__desc {
       @include text;
@@ -698,6 +723,13 @@ body {
         top: 50%;
         right: -8%;
         max-width: 230px;
+        transition: all 0.3s;
+        &:hover {
+          transform: translateX(-60px);
+          .es-results__molecules {
+            
+          }
+        }
       }
 
     }
@@ -754,6 +786,18 @@ body {
           top: 513px;
           left: 60%;
         }
+        &--desc {
+          bottom: 20px;
+        }
+        &--single {
+          transition: all 0.3s;
+          &:hover {
+            transform: scale(1.1);
+            .es-results__molecules {
+              
+            }
+          }
+        }
       }
       &__title-bottom {
         z-index: 5;
@@ -771,6 +815,13 @@ body {
         position: absolute;
         left: 0;
         top: 30px;
+        transition: all 0.3s;
+        &:hover {
+          transform: translateY(20px);
+          .es-results__molecules {
+            
+          }
+        }
       }
       &__headline {
         position: absolute;
@@ -799,6 +850,13 @@ body {
         z-index: 5;
         right: 0;
         top: -100px;
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(1.1);
+          .es-results__molecules {
+            
+          }
+        }
       }
       &__wrapper {
         margin: 0 0;

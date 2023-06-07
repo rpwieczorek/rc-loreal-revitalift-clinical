@@ -555,6 +555,9 @@ body {
   }
 
   .es-cross {
+    &__bg-desktop {
+      display: none;
+    }
     &__title {
       @include text;
       text-align: center;
@@ -613,6 +616,7 @@ body {
     }
     &__img {
       @include img;
+      display: block;
     }
     &__link {
       max-width: 300px;
@@ -635,7 +639,7 @@ body {
     background: #f1f3f2;
     &__text {
       @include text;
-      padding: 60px 15px 30px;
+      padding: 20px 15px 30px;
       text-align: center;
       font-size: 12px;
     }
@@ -865,6 +869,41 @@ body {
         left: 37%;
       }
     }
+    .es-cross {
+      position: relative;
+      padding: 0;
+      &__bg-desktop {
+        @include img;
+      }
+      &__img {
+        display: none;
+      }
+      &__content {
+        max-width: 290px;
+      }
+      &__subtitle {
+        font-size: 12px;
+      }
+      &__desc {
+        font-size: 12px;
+      }
+      &__title {
+        font-size: 22px;
+        position: absolute;
+        top: 5%;
+        left: 20px
+      }
+      &__left {
+        position: absolute;
+        top: 25%;
+      }
+      &__right {
+        position: absolute;
+        top: 25%;
+        right: 0;
+      }
+
+    }
   }
   @media screen and (min-width: 860px) {
     .es-formula {
@@ -927,6 +966,33 @@ body {
         }
       }
     }  
+    .es-cross {
+      &__content {
+        max-width: 360px;
+      }
+      &__subtitle {
+        font-size: 14px;
+      }
+      &__desc {
+        font-size: 14px;
+      }
+      &__title {
+        font-size: 28px;
+        position: absolute;
+        top: 5%;
+        left: 20px
+      }
+      &__left {
+        position: absolute;
+        top: 30%;
+      }
+      &__right {
+        position: absolute;
+        top: 30%;
+        right: 0;
+      }
+
+    }
   }
 }
 

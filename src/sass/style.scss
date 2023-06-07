@@ -296,7 +296,7 @@ body {
     &__title {
       @include text;
       font-size: 28px;
-      padding: 20px;
+      padding: 20px 20px 20px 0;
       text-transform: uppercase;
       text-align: center;
       font-weight: 700;
@@ -786,6 +786,33 @@ body {
         }
       }
 
+    }
+    .es-ingr {
+      position: relative;
+      &__img {
+        width: 450px;
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: -100px;
+      }
+      &__wrapper {
+        margin: 0 0;
+        width: 60%;
+      }
+      &__title {
+        text-align: left;
+      }
+      &__item {
+        text-align: left;
+      }
+      &__headline {
+        justify-content: left;
+      }
+      &__text {
+        width: 85%;
+        text-align: left;
+      }
     }
     .es-slider {
       background: url("../images/slider.png");
